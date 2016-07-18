@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D05328E1D3876E9004257A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D05328D1D3876E9004257A5 /* MapKit.framework */; };
+		8D0532901D38823B004257A5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D05328F1D38823B004257A5 /* WebKit.framework */; };
+		8DA4A3EA1D3C99FA007AAA1F /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA4A3E91D3C99FA007AAA1F /* PilotPlant.framework */; };
+		8DA4A3EC1D3C9A63007AAA1F /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4A3EB1D3C9A63007AAA1F /* UIViewController+Navigation.swift */; };
+		8DA4A3ED1D3C9A68007AAA1F /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA4A3E91D3C99FA007AAA1F /* PilotPlant.framework */; };
+		8DA4A3EE1D3C9A68007AAA1F /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA4A3E91D3C99FA007AAA1F /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DFA38671D3725BC00E56FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA38661D3725BC00E56FC5 /* AppDelegate.swift */; };
 		8DFA38691D3725BC00E56FC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA38681D3725BC00E56FC5 /* ViewController.swift */; };
 		8DFA386C1D3725BC00E56FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA386A1D3725BC00E56FC5 /* Main.storyboard */; };
@@ -14,7 +20,26 @@
 		8DFA38711D3725BD00E56FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA386F1D3725BD00E56FC5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8DA4A3EF1D3C9A68007AAA1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8DA4A3EE1D3C9A68007AAA1F /* PilotPlant.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8D05328B1D387623004257A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8D05328D1D3876E9004257A5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D05328F1D38823B004257A5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8DA4A3E91D3C99FA007AAA1F /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
+		8DA4A3EB1D3C9A63007AAA1F /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		8DFA38631D3725BC00E56FC5 /* DailyImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFA38661D3725BC00E56FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DFA38681D3725BC00E56FC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +54,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0532901D38823B004257A5 /* WebKit.framework in Frameworks */,
+				8D05328E1D3876E9004257A5 /* MapKit.framework in Frameworks */,
+				8DA4A3EA1D3C99FA007AAA1F /* PilotPlant.framework in Frameworks */,
+				8DA4A3ED1D3C9A68007AAA1F /* PilotPlant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +67,10 @@
 		8DFA385A1D3725BC00E56FC5 = {
 			isa = PBXGroup;
 			children = (
+				8DA4A3E91D3C99FA007AAA1F /* PilotPlant.framework */,
+				8D05328F1D38823B004257A5 /* WebKit.framework */,
+				8D05328D1D3876E9004257A5 /* MapKit.framework */,
+				8D05328B1D387623004257A5 /* UIKit.framework */,
 				8DFA38651D3725BC00E56FC5 /* DailyImage */,
 				8DFA38641D3725BC00E56FC5 /* Products */,
 			);
@@ -54,6 +87,7 @@
 		8DFA38651D3725BC00E56FC5 /* DailyImage */ = {
 			isa = PBXGroup;
 			children = (
+				8DA4A3EB1D3C9A63007AAA1F /* UIViewController+Navigation.swift */,
 				8DFA38661D3725BC00E56FC5 /* AppDelegate.swift */,
 				8DFA38681D3725BC00E56FC5 /* ViewController.swift */,
 				8DFA386A1D3725BC00E56FC5 /* Main.storyboard */,
@@ -72,8 +106,9 @@
 			buildConfigurationList = 8DFA38751D3725BD00E56FC5 /* Build configuration list for PBXNativeTarget "DailyImage" */;
 			buildPhases = (
 				8DFA385F1D3725BC00E56FC5 /* Sources */,
-				8DFA38601D3725BC00E56FC5 /* Frameworks */,
 				8DFA38611D3725BC00E56FC5 /* Resources */,
+				8DFA38601D3725BC00E56FC5 /* Frameworks */,
+				8DA4A3EF1D3C9A68007AAA1F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA4A3EC1D3C9A63007AAA1F /* UIViewController+Navigation.swift in Sources */,
 				8DFA38691D3725BC00E56FC5 /* ViewController.swift in Sources */,
 				8DFA38671D3725BC00E56FC5 /* AppDelegate.swift in Sources */,
 			);
@@ -200,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -240,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -254,6 +290,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DailyImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -269,6 +309,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DailyImage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

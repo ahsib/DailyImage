@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gOK-dT-Ji4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Daily-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DailyImage" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,41 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="처음화면" translatesAutoresizingMaskIntoConstraints="NO" id="ait-Jg-PLY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLH-td-5bz">
                                 <rect key="frame" x="84" y="511" width="109" height="57"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKI-yD-DPh">
-                                <rect key="frame" x="148" y="657" width="147" height="79"/>
-                                <connections>
-                                    <segue destination="urh-5F-q7B" kind="show" animates="NO" id="nKo-qs-RVC"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qu-89-9fX">
-                                <rect key="frame" x="0.0" y="658" width="140" height="75"/>
-                                <connections>
-                                    <segue destination="vvR-ob-9LA" kind="show" animates="NO" id="ufu-k7-Mfh"/>
-                                </connections>
+                                <rect key="frame" x="0.0" y="661" width="140" height="75"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doG-bw-oYR">
-                                <rect key="frame" x="295" y="658" width="114" height="75"/>
-                                <connections>
-                                    <segue destination="XT2-hd-LRB" kind="show" id="mZw-j8-w4t"/>
-                                </connections>
+                                <rect key="frame" x="300" y="661" width="114" height="75"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="처음화면" translatesAutoresizingMaskIntoConstraints="NO" id="ait-Jg-PLY">
+                                <rect key="frame" x="0.0" y="8" width="414" height="728"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="arI-3j-Kjf"/>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="XGg-6y-MBb"/>
+                    <navigationItem key="navigationItem" title="Daily" id="arI-3j-Kjf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gTp-E1-i52"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="HQd-O5-eob">
+                            <connections>
+                                <segue destination="urh-5F-q7B" kind="show" id="mC1-Z1-GJx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="264"/>
+            <point key="canvasLocation" x="3868" y="234"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="lHn-L9-N1c">
             <objects>
                 <viewController id="XT2-hd-LRB" sceneMemberID="viewController">
@@ -68,20 +65,21 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCr-DI-oQv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="525"/>
-                                <connections>
-                                    <segue destination="pXB-OS-Dl4" kind="show" animates="NO" id="iVd-S4-ze6"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="8FB-7Q-j30"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="Stt-pE-1TD">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ZVC-kx-hQR"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G9-EB-g2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1201" y="2472"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily-->
         <scene sceneID="hgG-d7-F8n">
             <objects>
                 <viewController id="urh-5F-q7B" sceneMemberID="viewController">
@@ -98,18 +96,18 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDc-uU-zFW">
                                 <rect key="frame" x="151" y="656" width="143" height="80"/>
-                                <connections>
-                                    <segue destination="14d-M4-jjP" kind="show" animates="NO" id="qBB-vP-RUz"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Daily" id="k5d-cb-iUe">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ADa-93-O9T"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ft-lt-8MY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="264"/>
+            <point key="canvasLocation" x="4537" y="234"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2dv-Qe-k0e">
@@ -133,9 +131,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddw-2S-5fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024" y="264"/>
+            <point key="canvasLocation" x="6272" y="264"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="PSk-5o-RvD">
             <objects>
                 <viewController id="Kx5-R6-qkD" sceneMemberID="viewController">
@@ -152,32 +150,26 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9t-fn-uyf">
                                 <rect key="frame" x="0.0" y="93" width="407" height="54"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="aCf-zQ-TjF"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-Ep-bvO">
                                 <rect key="frame" x="0.0" y="661" width="109" height="75"/>
-                                <connections>
-                                    <segue destination="tV7-n4-vaQ" kind="show" id="cZm-2N-Bh5"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-bp-STr">
                                 <rect key="frame" x="117" y="661" width="157" height="75"/>
-                                <connections>
-                                    <segue destination="Kbk-o1-3Ac" kind="show" id="CFd-Lu-qii"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="lwu-MS-nGA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="LyA-f2-pKw"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9z-P6-BH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2408" y="1266"/>
         </scene>
-        <!--View Controller-->
+        <!--Export-->
         <scene sceneID="zU1-oy-Qna">
             <objects>
                 <viewController id="pXB-OS-Dl4" sceneMemberID="viewController">
@@ -192,16 +184,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="내보내기" translatesAutoresizingMaskIntoConstraints="NO" id="u44-sG-Ipc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-YR-Ggc">
+                                <rect key="frame" x="75" y="188" width="116" height="113"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Export" id="ZuP-K8-raf">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="zGS-aS-PkT"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdR-d1-ntI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1775" y="2464"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily-->
         <scene sceneID="6no-oS-PJW">
             <objects>
                 <viewController id="vvR-ob-9LA" sceneMemberID="viewController">
@@ -218,32 +216,26 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGz-Mn-yPT">
                                 <rect key="frame" x="353" y="396" width="52" height="37"/>
-                                <connections>
-                                    <segue destination="Kbk-o1-3Ac" kind="show" animates="NO" id="aeb-aL-sqW"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yf-FH-jJ3">
                                 <rect key="frame" x="307" y="465" width="58" height="53"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Yac-cb-ftU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4o-Qz-aNs">
                                 <rect key="frame" x="121" y="652" width="155" height="76"/>
-                                <connections>
-                                    <segue destination="urh-5F-q7B" kind="show" id="6e1-Wk-tXh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Daily" id="hXa-X4-pKg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="7XY-3o-iG4"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8l-Gl-AUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="688" y="1266"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="S15-J5-eKV">
             <objects>
                 <viewController id="Kbk-o1-3Ac" sceneMemberID="viewController">
@@ -255,31 +247,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="달력_월" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-6D-1hA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-Sf-03C">
                                 <rect key="frame" x="0.0" y="655" width="102" height="81"/>
-                                <connections>
-                                    <segue destination="tV7-n4-vaQ" kind="show" animates="NO" id="Tf3-n9-ffM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2s-Eh-10k">
                                 <rect key="frame" x="266" y="655" width="148" height="81"/>
-                                <connections>
-                                    <segue destination="Kx5-R6-qkD" kind="show" animates="NO" id="lpQ-BH-f9I"/>
-                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="달력_월" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-6D-1hA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Calendar" id="3xK-Sw-lwi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5sO-No-UeL"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6rQ-nY-CJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1327" y="1266"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="ghf-OJ-6MA">
             <objects>
                 <viewController id="tV7-n4-vaQ" sceneMemberID="viewController">
@@ -296,29 +285,27 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh8-C4-utn">
                                 <rect key="frame" x="271" y="651" width="143" height="85"/>
-                                <connections>
-                                    <segue destination="Kx5-R6-qkD" kind="show" animates="NO" id="d9C-OV-SbW"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGC-og-hng">
                                 <rect key="frame" x="117" y="651" width="153" height="85"/>
-                                <connections>
-                                    <segue destination="Kbk-o1-3Ac" kind="show" animates="NO" id="HDP-Bp-ur7"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="gPc-yH-moL"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="hbg-g8-69c">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="WZ7-6g-ykJ"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8D6-hW-Gms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911" y="1266"/>
         </scene>
-        <!--View Controller-->
+        <!--Daily-->
         <scene sceneID="5rF-fD-f1z">
             <objects>
-                <viewController id="14d-M4-jjP" sceneMemberID="viewController">
+                <viewController id="14d-M4-jjP" customClass="WebScene" customModule="DailyImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D1e-jO-oag"/>
                         <viewControllerLayoutGuide type="bottom" id="orn-Yh-42O"/>
@@ -327,28 +314,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="처음화면_저장클릭" translatesAutoresizingMaskIntoConstraints="NO" id="Jg5-Ri-kFT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-0t-q6h">
                                 <rect key="frame" x="88" y="312" width="256" height="110"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="lVs-OL-ydW"/>
-                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="처음화면_저장클릭" translatesAutoresizingMaskIntoConstraints="NO" id="Jg5-Ri-kFT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Daily" id="8k7-p2-2Nb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ndj-T4-lhF"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jo0-4n-HZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="264"/>
+            <point key="canvasLocation" x="5167" y="234"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="ooU-ob-ZYQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gOK-dT-Ji4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CcG-Jd-Put"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yyz-en-H7F">
@@ -356,13 +344,34 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="a1P-Fk-5aS">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yoe-vy-nMm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqh-tt-bls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="264"/>
+            <point key="canvasLocation" x="3004" y="234"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bBg-aA-qFl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="D3Z-iM-pOX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fhk-lr-tQH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gOK-dT-Ji4" kind="relationship" relationship="viewControllers" id="87h-mi-WR3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9Z-10-hqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253" y="234"/>
         </scene>
     </scenes>
     <resources>
@@ -376,11 +385,4 @@
         <image name="처음화면_날짜클릭" width="842" height="1526"/>
         <image name="처음화면_저장클릭" width="851" height="1501"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="nKo-qs-RVC"/>
-        <segue reference="aCf-zQ-TjF"/>
-        <segue reference="lpQ-BH-f9I"/>
-        <segue reference="CFd-Lu-qii"/>
-        <segue reference="Tf3-n9-ffM"/>
-    </inferredMetricsTieBreakers>
 </document>
